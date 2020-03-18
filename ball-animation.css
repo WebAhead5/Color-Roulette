@@ -1,0 +1,120 @@
+body {
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .container {
+    width: 100%;
+    height:100%;
+  }
+  
+  .pieContainer {
+    height: 100px;
+    width: 100px;
+    margin: 20px auto;
+  }
+  
+  .pieContainer {
+    -webkit-animation: spin 3s linear infinite;
+    -moz-animation: spin 3s linear infinite;
+    animation: spin 3s linear infinite;
+  }
+  
+  @-webkit-keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(720deg);
+    }
+  }
+  
+  @-moz-keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(720deg);
+    }
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(720deg);
+    }
+  }
+
+.pieBackground {
+    background-color: white;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -o-border-radius: 50px;
+    border-radius: 50px;
+  }
+  
+  
+  .hold {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -o-border-radius: 50px;
+    border-radius: 50px;
+    clip: rect(0px, 100px, 100px, 50px);
+  }
+  
+  #pieSliceBlue {
+    -webkit-transform: rotate(120deg);
+    -moz-transform: rotate(120deg);
+    -o-transform: rotate(120deg);
+    transform: rotate(120deg);
+  }
+  
+  #pieSliceRed {
+    -webkit-transform: rotate(240deg);
+    -moz-transform: rotate(240deg);
+    -o-transform: rotate(240deg);
+    transform: rotate(240deg);
+  }
+  
+  .pie {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -o-border-radius: 50px;
+    border-radius: 50px;
+    clip: rect(0px, 50px, 100px, 0px);
+  }
+  
+  #pieSliceYellow .pie {
+    background-color: darkgreen;
+    -webkit-transform: rotate(120deg);
+    -moz-transform: rotate(120deg);
+    -o-transform: rotate(120deg);
+    transform: rotate(120deg);
+  }
+  
+  #pieSliceBlue .pie {
+    background-color: blue;
+    -webkit-transform: rotate(120deg);
+    -moz-transform: rotate(120deg);
+    -o-transform: rotate(120deg);
+    transform: rotate(120deg);
+  }
+  
+  #pieSliceRed .pie {
+    background-color: darkred;
+    -webkit-transform: rotate(120deg);
+    -moz-transform: rotate(120deg);
+    -o-transform: rotate(120deg);
+    transform: rotate(120deg);
+  }
