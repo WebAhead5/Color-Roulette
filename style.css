@@ -17,6 +17,21 @@
     
 }
 
+@media screen and (max-width:600px){
+.mainBody{   
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-areas: "title"
+                         "anime"
+                          "play"
+                         "score"
+                         "red1" 
+                        "green1" 
+                        "blue1";
+    }
+}
+
+
 div{
     height: 80%;
     width: 90%;
@@ -58,8 +73,8 @@ img {
 
 nav{
     grid-area: play;
-    height: 100%;
-    width: 90%;
+    height: 80%;
+    width: 80%;
     background: green;
     color: aliceblue;
     font-style: oblique;
@@ -78,11 +93,14 @@ nav{
 
 nav:hover{
     box-shadow: 0px 5px 12px -5px black;   
-    transform: scale(1.2);
+    transform: scale(1.1);
+    user-select: none;
+    
 }
 nav:active{
     box-shadow: 0px 4px 5px black;        
     transform: scale(1) !important;
+    user-select: none;
 }
 
 div.score {
@@ -91,7 +109,8 @@ div.score {
     width: 70%;
     background: green;
     color: aliceblue;
-    justify-self:top;
+    justify-self:bottom;
+    margin-bottom: 0px;
     margin-right: 40px;
     user-select: none;
     

@@ -1,9 +1,8 @@
-    //this variable for user choice
+
     let choice;
-    
+
     //highlight the choosen box
      function selectMe(id){
-            
         //dehighlight the other choices (boxes)  
          // if we have many choices then we better use for() to all other siblings to dehilight 
          if(id=="red"){
@@ -32,11 +31,16 @@
         //when hit play: if sound for previous result is playing then stop
         audioRight.pause();
         audioWrong.pause();
+        //setting image back to default
+        document.getElementById("img").src="images/roulette.png";
+        document.getElementById("anime").style.background = "lightgray";
+        
         if(choice==null)
             alert("Choose a color");
         else
             animateMe();
     }
+
     
     //initiate array of colors for the animation
     //initiat colorNum which refers to the final computer's choice of color
@@ -45,27 +49,20 @@
     var score=0;
     
     function animateMe(){
-        
         document.getElementById("img").style.display="hide";
-        //if(choice!=null){
-        flashBox();
-        setTimeout(flashBox,300);
-        setTimeout(flashBox,600);
-        setTimeout(flashBox,900);
-        setTimeout(flashBox,1200);
-        setTimeout(flashBox,1600);
-        setTimeout(flashBox,2000);
-        setTimeout(flashBox,2400);
-        setTimeout(flashBox,2800);
-        setTimeout(flashBox,3200);
-        //}
-        setTimeout(answerCheck,4200);
+        var myTimer=200;
+        for( var i =0 ; i< 10; i++){
+            setTimeout(flashBox,myTimer);
+            myTimer +=200;
+        }
+        
+        setTimeout(answerCheck,4000);
     }
     
     //change colors for the animated area and saves the final color value to colorNum
     function flashBox(){
             colorNum = Math.floor(Math.random() * 3 ) ;
-            document.getElementById("img").style.background = colors[colorNum]; 
+            document.getElementById("anime").style.background = colors[colorNum]; 
     }
     
     //initiating sounds objects for results
@@ -85,13 +82,25 @@
             score--;
         }
         
+        if(score<0){
+            setTimeout(function(){
+                alert("Game Over. Click OK to start over");
+                location.reload();
+            }, 1000);
+        }
+        
         //print out score
         document.getElementById("score").innerHTML="<b> Score <hr>" + score + "<b>";
         
         //set the animated area image back to default image (after 1.4 sec)
         setTimeout(function(){
             document.getElementById("img").src="images/roulette.png";
-            document.getElementById("img").style.background = "lightgray";
+            document.getElementById("anime").style.background = "lightgray";
         },3000);
+        
+        function refresh(){
+            location.reload;
+        }
+        
         
     }

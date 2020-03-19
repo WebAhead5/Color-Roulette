@@ -2,15 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Color Roulette</title>
+    <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script src="script.js"> </script>
 </head>
 
 <body>
     
 <div class="mainBody">
-    <div class="title"> <b>Guess the Color </b>
+    <div class="title"> <b>Guess the Color <br> <img onclick="location.reload()" src="images/refresh.png" alt="refresh" style="cursor: pointer ;height: 70px; width: 70px; margin-top:20px;"></b>
     </div>
     
     <div class="anime" id="anime"> 
@@ -25,6 +25,7 @@
         <b>Score <hr> 0 </b>
     </div>
     
+    <!-- we can have the three boxes under one div so the colored boxes can be siblings -->
     <div class="red1"> 
         <div class="red" id="red" style="background: darkred" onClick="selectMe('red')"> </div>
     </div>
@@ -38,9 +39,7 @@
     </div>
 </div>
 
-<script>
 
-</script>
 
 </body>
 </html>
