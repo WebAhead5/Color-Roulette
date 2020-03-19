@@ -2,12 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Roulette</title>
     <link rel="stylesheet" href="style.css">
-    <script>
-      
-    </script>
+    <script src="script.js"></script>
 </head>
 
 <body>
@@ -16,30 +13,34 @@
     <div class="title"> <b>Guess the Color </b>
     </div>
     
-    <div class="anime"> 
-    <img src="forest1.jpg" alt="animated lottery">
+    <div class="anime" id="anime"> 
+    <img src="images/roulette.png" id="img" alt="animated lottery">
     </div>
     
     <div class="play">
-         <nav> Play </nav>  
+         <nav onclick="play()"> Play </nav>  
     </div>
     
-    <div class="score"> 
-        Score 
+    <div class="score" id="score"> 
+        <b>Score <hr> 0 </b>
     </div>
     
     <div class="red1"> 
-        <div class="red" style="background: darkred"> </div>
+        <div class="red" id="red" style="background: darkred" onClick="selectMe('red')"> </div>
     </div>
     
     <div class="blue1">  
-        <div class="blue" style="background: blue"> </div>
+        <div class="blue" id="blue" style="background: blue" onClick="selectMe('blue')"> </div>
     </div>
     
     <div class="green1"> 
-        <div class="green" style="background: darkgreen"> </div>
+        <div class="green" id="green" style="background: darkgreen" onClick="selectMe('green')"> </div>
     </div>
-    
 </div>
+
+<script>
+
+</script>
+
 </body>
 </html>
