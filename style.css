@@ -17,6 +17,61 @@
     
 }
 
+@media screen and (max-width:600px){
+.mainBody{   
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "title title title"
+                         "anime anime anime"
+                        "anime anime anime"
+                         " score score play"
+                         "red1 green1 blue1";
+    grid-gap: 12px;
+    user-select: none;
+    }
+    
+.anime{
+    grid-area: anime;
+    height: 100%;
+    width: 90%;
+    background: lightgray;
+    user-select: none;
+    
+} 
+    
+
+div{
+    height: 100%;
+    width: 90%;
+    text-align: center;
+    justify-self: center;
+    background: lightgray;
+    user-select: none;
+}
+    
+    nav{
+    margin-right: 35px;
+    width: 90%;
+    grid-area: play;
+    justify-self: center; 
+    user-select: none;
+    text-justify: bottom;
+        
+    }
+    
+    div.score {
+    grid-area: score;
+    height: 50%;
+    width: 70%;
+    justify-self:bottom;
+    margin-top: 20px;
+    margin-left: 20px;
+    user-select: none;
+}
+    
+}
+
+
 div{
     height: 80%;
     width: 90%;
@@ -67,7 +122,7 @@ nav{
     justify-self: center;
     padding-top:10%;
     border: 2px solid black;
-    border-radius: 50%;
+    border-radius: 150px 20px;
     cursor: pointer;
     font-size: 29px;
     font-weight: bold;
@@ -75,7 +130,6 @@ nav{
     transition: all 0.3s;
     user-select: none;
 }
-
 
 nav:hover{
     box-shadow: 0px 5px 12px -5px black;   
@@ -97,7 +151,7 @@ div.score {
     color: aliceblue;
     justify-self:bottom;
     margin-bottom: 0px;
-    margin-right: 35px;
+    margin-right: 40px;
     user-select: none;
     
 }
@@ -134,37 +188,4 @@ div.score {
     border-radius: 30px 30px;
     cursor: pointer;
     user-select: none;
-}
-
-    
-@media only screen and (max-width: 600px){
-    .mainBody{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-areas: "title title title"
-                             "anime anime play"
-                             "score score score"
-                             "red1 green1 blue1";
-    }
-
-    nav{
-        align-self: center;
-        height: 120px;
-        width: 120px;
-        margin-top: 20px;
-    }
-
-    .anime{
-        width: 200px;
-        height: 200px;
-    }
-
-    .refresh {
-        margin-bottom: 70px;
-    }
-
-    div.score {
-        margin: -70px -20px;
-        padding-bottom: 50px;
-    }
 }
