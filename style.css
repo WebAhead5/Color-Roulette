@@ -17,21 +17,6 @@
     
 }
 
-@media screen and (max-width:600px){
-.mainBody{   
-    display: grid;
-    grid-template-columns: 1fr ;
-    grid-template-areas: "title"
-                         "anime"
-                          "play"
-                         "score"
-                         "red1" 
-                        "green1" 
-                        "blue1";
-    }
-}
-
-
 div{
     height: 80%;
     width: 90%;
@@ -82,7 +67,7 @@ nav{
     justify-self: center;
     padding-top:10%;
     border: 2px solid black;
-    border-radius: 150px 20px;
+    border-radius: 50%;
     cursor: pointer;
     font-size: 29px;
     font-weight: bold;
@@ -90,6 +75,7 @@ nav{
     transition: all 0.3s;
     user-select: none;
 }
+
 
 nav:hover{
     box-shadow: 0px 5px 12px -5px black;   
@@ -111,7 +97,7 @@ div.score {
     color: aliceblue;
     justify-self:bottom;
     margin-bottom: 0px;
-    margin-right: 40px;
+    margin-right: 35px;
     user-select: none;
     
 }
@@ -148,4 +134,37 @@ div.score {
     border-radius: 30px 30px;
     cursor: pointer;
     user-select: none;
+}
+
+    
+@media only screen and (max-width: 600px){
+    .mainBody{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: "title title title"
+                             "anime anime play"
+                             "score score score"
+                             "red1 green1 blue1";
+    }
+
+    nav{
+        align-self: center;
+        height: 120px;
+        width: 120px;
+        margin-top: 20px;
+    }
+
+    .anime{
+        width: 200px;
+        height: 200px;
+    }
+
+    .refresh {
+        margin-bottom: 70px;
+    }
+
+    div.score {
+        margin: -70px -20px;
+        padding-bottom: 50px;
+    }
 }

@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="script.js"> </script>
 </head>
 
 <body>
     
 <div class="mainBody">
-    <div class="title"> <b>Guess the Color <br> <img onclick="location.reload()" src="images/refresh.png" alt="refresh" style="cursor: pointer ;height: 70px; width: 70px; margin-top:20px;"></b>
+    <div class="title"> <b>Guess the Color <br> <img class="refresh" onclick="location.reload()" src="images/refresh.png" alt="refresh" style="cursor: pointer ;height: 70px; width: 70px; margin-top:20px;"></b>
     </div>
     
     <div class="anime" id="anime"> 
@@ -18,13 +19,14 @@
     </div>
     
     <div class="play">
-         <nav onclick="play()"> Play </nav>  
+         <nav onclick="play()"><br> Play </nav>  
     </div>
     
     <div class="score" id="score"> 
         <b>Score <hr> 0 </b>
     </div>
     
+
     <!-- we can have the three boxes under one div so the colored boxes can be siblings -->
     <div class="red1"> 
         <div class="red" id="red" style="background: darkred" onClick="selectMe('red')"> </div>
