@@ -11,7 +11,8 @@ Guess the Color
 **click** [![button](https://img.icons8.com/metro/26/000000/go.png)](https://webahead5.github.io/Color-Roulette/) **to Start Playing**
 
 ## Table of Contents
-[TOC]
+
+[DOC]
 
 
 User story
@@ -19,7 +20,8 @@ User story
 
 ```gherkin=
 Feature: Guess the Color
-         user plays against the computer "guessing the color". if user's choice                matches the computer's pick then user would win.
+         user plays against the computer "guessing the color". if user's choice 
+         matches the computer's pick then user would win.
     
   # The game has three steps
   Scenario: The user chooses a color
