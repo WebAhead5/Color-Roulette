@@ -122,7 +122,7 @@ nav{
     justify-self: center;
     padding-top:10%;
     border: 2px solid black;
-    border-radius: 150px 20px;
+    border-radius: 100px 100px;
     cursor: pointer;
     font-size: 29px;
     font-weight: bold;
