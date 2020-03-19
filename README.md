@@ -1,22 +1,18 @@
----
-title: 'Guess the Color'
----
+# Guess the Color
 
-Guess the Color
-===
 ***So you think you are lucky today?? hah***... :blush::blush::blush:
 ***Lets see whats the highest score you can reach?!***
 
 **Once you are ready**
-**click** [![button](https://img.icons8.com/metro/26/000000/go.png)](https://webahead5.github.io/Color-Roulette/) **to Start Playing**
+**click** [![button](https://img.icons8.com/metro/26/000000/go.png)](https://webahead5.github.io/Color-Roulette/) **to Start Playing*
 
 ## Table of Contents
+- [User Story](#user-story)
+- [User flows](#user-flows)
+- [Project Goals](project-Goals)
+- [FAQ](FAQ)
 
-[DOC]
-
-
-User story
----
+## User story
 
 ```gherkin=
 Feature: Guess the Color
@@ -30,9 +26,7 @@ Feature: Guess the Color
     Then  returns the results 
 ```
 
-
-User flows
----
+## User flows
 
 ```gherkin=
 Game Scenario 
@@ -43,16 +37,12 @@ Game Scenario
 ```
 ![alt text](https://i.imgur.com/3SPv4as.png)
 
+## ProjectGoals
 
-
-Project Goals
----
 * Designing an interactive game where the concept of the game came from the roulette game in which the player put an amount of his money on a one or more color.However,to make our game much more simple we stick to three colors.
 
 
 * The capability to integrate HTML,CSS and javascript all together in the game where we implemented attributes and functions of javascript to fully control the design of the game and the flow of it . 
-
-
 
 ## FAQ
 
@@ -68,5 +58,3 @@ The score will be decreased by 1 each time the player till he reach a point wher
   
 4. **What will happen if the user's score reached zero ?**
 When the user runs out of points (score is zero) a tab will appear showing that the game is over and the game will be restarted.
-
-
